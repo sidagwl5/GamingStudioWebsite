@@ -1,0 +1,136 @@
+.about-main{
+
+    position: relative;
+    color: white;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    padding: 40px;
+    background-image: linear-gradient(283deg, rgba(228, 228, 228,0.04) 0%, rgba(228, 228, 228,0.04) 30%,
+    rgba(130, 130, 130,0.04) 30%, rgba(130, 130, 130,0.04) 49%,rgba(31, 31, 31,0.04) 49%, rgba(31, 31, 31,0.04) 100%),
+    linear-gradient(297deg, rgba(228, 228, 228,0.04) 0%, rgba(228, 228, 228,0.04) 20%,rgba(130, 130, 130,0.04) 20%, 
+    rgba(130, 130, 130,0.04) 60%,rgba(31, 31, 31,0.04) 60%, 
+    rgba(31, 31, 31,0.04) 100%),linear-gradient(242deg, rgba(228, 228, 228,0.04) 0%, rgba(228, 228, 228,0.04) 29%,
+    rgba(130, 130, 130,0.04) 29%, 
+    rgba(130, 130, 130,0.04) 48%,rgba(31, 31, 31,0.04) 48%, rgba(31, 31, 31,0.04) 100%),
+    linear-gradient(90deg, rgb(0,0,0),rgb(0,0,0));
+}
+
+.about-submain1{
+
+    position: relative;
+    max-width: 900px;
+    display: flex;
+    flex-direction: row-reverse;
+    margin-top: 20px;
+}
+
+.about-part1{
+
+    position: relative;
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-end;
+}
+
+.about-part1 h1{
+
+    font-size: 50px;
+    letter-spacing: 6px;
+    font-weight: lighter;
+    color: white;
+    text-transform: uppercase;
+
+}
+
+.about-part1 p{
+
+    font-size: 19px;
+    width: 80%;
+    text-align: right;
+    margin-top: 10px;
+}
+
+.about-part2{
+
+    position: relative;
+    width: 40%;
+}
+
+.about-part2 img{
+
+    position: relative;
+    max-width: 100%;
+}
+
+/***********************************************************************************************************************************/
+
+@media only screen and (max-width: 1000px) {
+   
+    .about-part1 p{
+
+        font-size: 17px;
+    }
+  }
+
+  @media only screen and (max-width: 800px) {
+  
+    .about-part1 p{
+
+        font-size: 15px;
+    }
+
+    .about-part1 h1{
+
+        font-size: 40px;
+    }
+  }
+
+  @media only screen and (max-width: 700px) {
+   
+    .about-submain1{
+
+        flex-direction: column;
+    }
+
+    .about-part1{
+
+        width: 100%;
+        align-items: center;
+    }
+
+    .about-part1 p{
+
+        text-align: center;
+        width: 90%;
+    }
+
+    .about-part2{
+
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        padding: 20px;
+    }
+
+    .about-part2 img{
+
+        max-width: 45%;
+        
+    }
+
+    .about-main{
+
+        padding: 0px;
+    }
+  }
+
+  @media only screen and (max-width: 550px) {
+   
+    .about-part1 p{
+
+        font-size: 13.5px;
+    }
+  }

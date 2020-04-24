@@ -1,0 +1,155 @@
+.contact-main{
+
+    position: relative;
+    width: 100%;
+    background-image: repeating-linear-gradient(135deg, rgba(145, 145, 145, 0.02) 0px, 
+    rgba(145, 145, 145, 0.02) 39px,rgba(140, 140, 140, 0.02) 39px, rgba(140, 140, 140, 0.02) 57px,rgba(9, 9, 9, 0.02) 57px, 
+    rgba(9, 9, 9, 0.02) 91px,rgba(217, 217, 217, 0.02) 91px, rgba(217, 217, 217, 0.02) 119px,rgba(45, 45, 45, 0.02) 119px, 
+    rgba(45, 45, 45, 0.02) 141px,rgba(227, 227, 227, 0.02) 141px, rgba(227, 227, 227, 0.02) 184px,rgba(236, 236, 236, 0.02) 184px, 
+    rgba(236, 236, 236, 0.02) 227px,rgba(124, 124, 124, 0.02) 227px, rgba(124, 124, 124, 0.02) 244px),
+    repeating-linear-gradient(135deg, rgba(39, 39, 39, 0.02) 0px, rgba(39, 39, 39, 0.02) 23px,rgba(2, 2, 2, 0.02) 23px, 
+    rgba(2, 2, 2, 0.02) 55px,rgba(13, 13, 13, 0.02) 55px, rgba(13, 13, 13, 0.02) 71px,rgba(44, 44, 44, 0.02) 71px, 
+    rgba(44, 44, 44, 0.02) 98px,rgba(240, 240, 240, 0.02) 98px, rgba(240, 240, 240, 0.02) 134px,rgba(182, 182, 182, 0.02) 134px,
+     rgba(182, 182, 182, 0.02) 159px,rgba(246, 246, 246, 0.02) 159px, rgba(246, 246, 246, 0.02) 174px,rgba(157, 157, 157, 0.02) 174px, 
+     rgba(157, 157, 157, 0.02) 190px),
+     repeating-linear-gradient(135deg, rgba(145, 145, 145, 0.02) 0px, rgba(145, 145, 145, 0.02) 35px,
+     rgba(217, 217, 217, 0.02) 35px, rgba(217, 217, 217, 0.02) 53px,rgba(199, 199, 199, 0.02) 53px, rgba(199, 199, 199, 0.02) 70px,
+     rgba(196, 196, 196, 0.02) 70px, rgba(196, 196, 196, 0.02) 114px,rgba(137, 137, 137, 0.02) 114px, rgba(137, 137, 137, 0.02) 143px,
+     rgba(249, 249, 249, 0.02) 143px, rgba(249, 249, 249, 0.02) 191px,rgba(247, 247, 247, 0.02) 191px, rgba(247, 247, 247, 0.02) 239px,
+    rgba(38, 38, 38, 0.02) 239px, rgba(38, 38, 38, 0.02) 273px),linear-gradient(90deg, rgb(69, 69, 69),rgb(3, 3, 3));
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+
+    
+}
+
+.contact-submain1{
+
+
+    position: relative;
+    grid-column: 3/-3;
+    height: 620px;
+    display: flex;
+    margin-top: 70px;
+    margin-bottom: 70px;
+    
+}
+
+.contact-submain1 button{
+
+    position: relative;
+    background-color: transparent;
+    border: 1px white solid;
+    padding: 10px;
+    color: white;
+    text-transform: uppercase;
+}
+
+.contact-part1{
+
+   position: relative;
+   width: 40%;
+   height: 100%;
+   background-image: url("https://mfiles.alphacoders.com/333/333124.jpg");
+   background-position: top center;
+   background-size: cover;
+
+}
+
+.contact-part2{
+
+    position: relative;
+    width: 60%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    padding: 40px;
+    padding-top: 0px;
+    padding-bottom: 0px;
+    justify-content: space-around;
+    background-color: rgba(0, 0, 0, 0.2);
+}
+
+
+.contact-part2 div{
+
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    
+}
+
+.contact-part2 div label{
+
+    font-size: 22px;
+    color: white;
+    text-transform: uppercase;
+    font-weight: lighter;
+}
+
+.contact-part2 div input, .contact-part2 div textarea{
+
+    background-color: transparent;
+    border: none;
+    border-bottom: 1px white solid;
+    color: white;
+}
+
+.contact-part2 h1{
+
+    color: white;
+    text-transform: uppercase;
+    font-size: 55px;
+    font-weight: lighter;
+
+}
+
+
+/**********************************************************************************/
+
+
+@media only screen and (max-width: 1000px){
+
+    .contact-submain1{
+
+        grid-column: 2/-2;
+    }
+}
+
+@media only screen and (max-width: 800px){
+
+    .contact-part1{
+
+        display: none;
+    }
+
+    .contact-submain1{
+
+        justify-content: center;
+
+    }
+
+    .contact-part2{
+
+        width: 80%;
+    }
+}
+
+@media only screen and (max-width: 601px){
+
+    .contact-submain1{
+
+        grid-column: 1/-1;
+    }
+    .contact-part2{
+
+        width: 100%;
+    }
+
+    .contact-part2 h1{
+
+        font-size: 40px;
+    }
+
+    
+}
